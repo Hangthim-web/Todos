@@ -3,20 +3,14 @@
         "browser": true,
         "es2021": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "overrides": [
-    ],
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "overrides": [],
     "parser": "@typescript-eslint/parser",
+    "root": true,
     "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        "project": true,
+        "tsconfigRootDir": "_dirname"
     },
-    "plugins": [
-        "@typescript-eslint"
-    ],
-    "rules": {
-    }
+    "plugins": ["@typescript-eslint"],
+    "rules": {}
 }
